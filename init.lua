@@ -164,17 +164,11 @@ list_australia = {
 	"australia:bluestone",
 	"australia:darwin_woollybutt_wood",}
 
--- morebricks - added 2022-07-06
 
-list_morebricks = {
-	"morebricks:white",
-	"morebricks:whiteaged",
-	"morebricks:blue",
-	"morebricks:darkgrey",
-	"morebricks:black",}
- 
-for _,name in pairs(list_default) do
-   register_platform(own_name,name)   
+if minetest.get_modpath("default") then
+   for _,name in pairs(list_default) do
+      register_platform(own_name,name)   
+   end
 end
 
 if minetest.get_modpath("moreblocks") then
@@ -244,12 +238,12 @@ if minetest.get_modpath("australia") then
 end
 
 
--- added 2022-07-26
+--[[added 2022-07-26 (disabled due to overriding with bakedclay mod
 if minetest.get_modpath("morebricks") then
    for _,name in pairs(list_morebricks) do
       register_platform(own_name,name)   
    end
-end
+end]]
 
 local woodpath_lengths = { 
    { 5,10 },
