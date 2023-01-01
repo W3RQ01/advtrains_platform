@@ -24,4 +24,6 @@ All the platforms have a crafting recipe, If you are in survival, you have to us
 
 2.1: Land down under update (2022/07/30)
 
+2.1.1: Bwoken mod release (2023/01/01)
+
 *the content is not aviable anymore due to deletion of the repository
