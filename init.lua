@@ -129,7 +129,9 @@ list_technic =  {
 -- added 2021-04-06
         "technic:marble_bricks",
 -- added 2021-04-09	
-        "technic:granite",}
+        "technic:granite",
+-- added 2023-02-10
+	"technic:concrete",}
 
 -- bakedclay  - added 2021-04-06
 
@@ -162,7 +164,11 @@ list_australia = {
 	"australia:coolabah_wood",
 	"australia:mulga_wood",
 	"australia:bluestone",
-	"australia:darwin_woollybutt_wood",}
+	"australia:bluestone_cobble",
+	"australia:darwin_woollybutt_wood"
+-- added 2023-02-10	
+	"australia:bluestone_brick",
+	"australia:fan_palm_wood",}
 
 
 if minetest.get_modpath("default") then
@@ -238,7 +244,7 @@ if minetest.get_modpath("australia") then
 end
 
 
---[[added 2022-07-26 (disabled due to overriding with bakedclay mod
+--[[added 2022-07-26 disabled due to overriding with bakedclay mod
 if minetest.get_modpath("morebricks") then
    for _,name in pairs(list_morebricks) do
       register_platform(own_name,name)   
