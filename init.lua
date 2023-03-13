@@ -165,7 +165,7 @@ list_australia = {
 	"australia:mulga_wood",
 	"australia:bluestone",
 	"australia:bluestone_cobble",
-	"australia:darwin_woollybutt_wood"
+	"australia:darwin_woollybutt_wood",
 -- added 2023-02-10	
 	"australia:bluestone_brick",
 	"australia:fan_palm_wood",}
